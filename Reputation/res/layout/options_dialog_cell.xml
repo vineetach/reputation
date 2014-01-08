@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+            android:id="@+id/options_dialog_cell_image"
+            android:layout_width="@dimen/options_dialog_cell_image_width"
+            android:layout_height="@dimen/options_dialog_cell_image_height"
+            android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+            android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+            android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+            android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+            android:background="@color/grey"
+            android:contentDescription="@string/cell_image" />
+
+        <TextView
+            android:id="@+id/options_dialog_cell_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+            android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+            android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+            android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/options_dialog_cell_textSize"
+            android:text="@string/options_dialog_title_text"/>
+
+</LinearLayout>

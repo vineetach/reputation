@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reputation</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logo">Logo</string>
+    <string name="cell_image">cell image</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="review">Review</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="respond">Respond</string>
+    <string name="welcome">Welcome</string>
+    
+    <string name="button_signin">SignIn</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    
+    <string name="welcome_title">Welcome to Reputation.com</string>
+    <string name="welcome_text">Proactively manage and \nrespond to your customers \ncomments on review and social\nsites.</string>
+    <string name="getstarted">Get Started</string>
+    <string name="configureapp">Configure App</string>
+    
+    <string name="contentfeed_title">My Content Feed</string>
+    <string name="contentfeed_text">Decide what customer created \ncontent requires your \nattention</string>
+    <string name="customize_setting">Customize Settings</string>
+    <string name="use_default_setting"><u>Use Default Settings</u></string>
+    
+    <string name="read_more"><u>Read More</u></string>
+    <string name="responded">Responded</string>
+    
+    <string name="options_dialog_title_text">Options</string>
+    
+    <string name="sample_response">This is a sample</string>
+    
+</resources>

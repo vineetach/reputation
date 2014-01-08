@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/content_cell_background">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/front">
+        
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                 android:id="@+id/content_cell_rating"
+                 android:layout_width="wrap_content"
+                 android:layout_height="@dimen/content_cell_image_height"
+                 android:layout_marginLeft="@dimen/content_cell_marginLeft"
+                 android:layout_marginTop="@dimen/content_cell_marginTop"
+                 android:drawableTop="@drawable/ic_launcher"
+             />
+            
+            <ImageView
+                android:id="@+id/content_cell_image"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginLeft="@dimen/content_cell_marginLeft"
+                android:layout_marginTop="@dimen/content_cell_marginTop"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                 android:id="@+id/content_cell_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/content_cell_marginLeft"
+                 android:layout_marginTop="@dimen/content_cell_marginTop"
+                 android:text="@string/name"
+             />
+        </LinearLayout>
+        
+        <TextView
+             android:id="@+id/content_cell_address"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="@dimen/content_cell_marginRight"
+             android:layout_marginTop="@dimen/content_cell_marginTop"
+             android:textSize="@dimen/content_cell_textSize"
+             android:ellipsize="end"
+             android:singleLine="true"
+             android:layout_alignParentRight="true"
+             android:text="@string/address"
+             android:textColor="@color/black"/>
+    
+    </RelativeLayout>
+
+    <TextView
+         android:id="@+id/content_cell_review_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/content_cell_marginLeft"
+         android:layout_marginTop="@dimen/content_cell_marginTop"
+         android:textSize="@dimen/content_cell_textSize"
+         android:ellipsize="end"
+         android:text="@string/review"
+         android:textColor="@color/black"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       
+        <TextView
+             android:id="@+id/content_cell_read_more"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/content_cell_marginLeft"
+             android:layout_marginTop="@dimen/content_cell_marginTop"
+             android:textSize="@dimen/content_cell_textSize"
+             android:ellipsize="end"
+             android:text="@string/read_more"
+             android:layout_alignParentLeft="true"
+             android:textColor="@color/light_blue"/>
+        
+        <TextView
+             android:id="@+id/content_cell_responded"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="@dimen/content_cell_marginRight"
+             android:layout_marginTop="@dimen/content_cell_marginTop"
+             android:textSize="@dimen/content_cell_textSize"
+             android:ellipsize="end"
+             android:text="@string/responded"
+             android:layout_alignParentRight="true"
+             android:textColor="@color/light_blue"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

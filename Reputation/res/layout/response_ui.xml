@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_cell_background" 
+        android:layout_marginBottom="@dimen/navigation_cell_marginBottom">
+        
+        <Button
+            android:id="@+id/response_ui_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/response_ui_marginLeft"
+            android:layout_marginTop="@dimen/response_ui_marginTop"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:layout_alignParentLeft="true"
+            android:background="@color/brown_red"
+            android:textColor="@color/black"
+            android:text="@string/cancel"/>
+        
+        <Button
+            android:id="@+id/response_ui_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/response_ui_marginRight"
+            android:layout_marginTop="@dimen/response_ui_marginTop"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:layout_alignParentRight="true"
+            android:background="@color/light_green"
+            android:textColor="@color/black"
+            android:text="@string/submit"/>
+
+        <TextView
+            android:id="@+id/response_ui_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/response_ui_submit_button"
+            android:layout_alignBottom="@+id/response_ui_submit_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/respond"
+            android:textColor="@color/black"
+            android:textSize="@dimen/response_ui_titleSize"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/response_editText"
+        android:layout_width="match_parent" 
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/response_ui_marginTop"
+        android:layout_marginLeft="@dimen/response_ui_marginLeft"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:background="@drawable/edit_box"
+        android:hint="@string/sample_response"/>
+
+</LinearLayout>

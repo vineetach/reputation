@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_cell_image_width">45dp</dimen>
+    <dimen name="navigation_cell_image_height">45dp</dimen>
+    <dimen name="navigation_cell_marginLeft">10dp</dimen>
+    <dimen name="navigation_cell_marginRight">10dp</dimen>
+    <dimen name="navigation_cell_marginTop">5dp</dimen>
+    <dimen name="navigation_cell_marginBottom">5dp</dimen>
+    
+    <dimen name="content_cell_image_width">40dp</dimen>
+    <dimen name="content_cell_image_height">25dp</dimen>
+    <dimen name="content_cell_marginLeft">10dp</dimen>
+    <dimen name="content_cell_marginRight">10dp</dimen>
+    <dimen name="content_cell_marginTop">10dp</dimen>
+    <dimen name="content_cell_marginBottom">5dp</dimen>
+    <dimen name="content_cell_textSize">14sp</dimen>
+    
+    <dimen name="options_dialog_marginLeft">10dp</dimen>
+    <dimen name="options_dialog_marginRight">10dp</dimen>
+    <dimen name="options_dialog_marginTop">5dp</dimen>
+    <dimen name="options_dialog_marginBottom">5dp</dimen>
+    <dimen name="options_dialog_title_textSize">18sp</dimen>
+    
+    <dimen name="options_dialog_cell_marginLeft">10dp</dimen>
+    <dimen name="options_dialog_cell_marginRight">10dp</dimen>
+    <dimen name="options_dialog_cell_marginBottom">5dp</dimen>
+    <dimen name="options_dialog_cell_marginTop">5dp</dimen>
+    <dimen name="options_dialog_cell_name_marginTop">5dp</dimen>
+    <dimen name="options_dialog_cell_image_width">20dp</dimen>
+    <dimen name="options_dialog_cell_image_height">20dp</dimen>
+    <dimen name="options_dialog_cell_textSize">14sp</dimen>
+    
+    <dimen name="response_ui_marginLeft">10dp</dimen>
+    <dimen name="response_ui_marginRight">10dp</dimen>
+    <dimen name="response_ui_marginTop">5dp</dimen>
+    <dimen name="response_ui_marginBottom">5dp</dimen>
+    <dimen name="response_ui_titleSize">14sp</dimen>
+    
+    <dimen name="paddingLeft">20dp</dimen>
+    <dimen name="paddingRight">20dp</dimen>
+    <dimen name="paddingTop">20dp</dimen>
+    <dimen name="paddingBottom">20dp</dimen>
+    
+    <dimen name="content_ui_marginTop">5dp</dimen>
+    <dimen name="navigation_ui_marginTop">5dp</dimen>
+    
+    <dimen name="button_stroke_width">1dp</dimen>
+    <dimen name="button_corner_radius">1dp</dimen>
+    
+</resources>

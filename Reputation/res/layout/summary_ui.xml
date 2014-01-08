@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:stretchColumns="*" >
+
+        <TableRow 
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            
+                <ImageView
+                    android:id="@+id/options_dialog_cell_image"
+                    android:layout_width="@dimen/options_dialog_cell_image_width"
+                    android:layout_height="@dimen/options_dialog_cell_image_height"
+                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                    android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:contentDescription="@string/cell_image" />
+            
+                <TextView
+                    android:id="@+id/options_dialog_cell_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                    android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/options_dialog_cell_textSize"
+                    android:text="@string/options_dialog_title_text"/>
+        
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        
+                <ImageView
+                    android:id="@+id/options_dialog_cell_image1"
+                    android:layout_width="@dimen/options_dialog_cell_image_width"
+                    android:layout_height="@dimen/options_dialog_cell_image_height"
+                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                    android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:contentDescription="@string/cell_image" />
+        
+                <TextView
+                    android:id="@+id/options_dialog_cell_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                    android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/options_dialog_cell_textSize"
+                    android:text="@string/options_dialog_title_text"/>
+                
+            </LinearLayout>
+
+        </TableRow>
+    
+    
+
+    </TableLayout>
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image3"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_column="0"
+        android:layout_gravity="left|bottom"
+        android:layout_row="0"
+        android:stretchColumns="*" >
+            
+        <TableRow 
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+            <ImageView
+                android:id="@+id/options_dialog_cell_imag4"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+        
+            <TextView
+                android:id="@+id/options_dialog_cell_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+    
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image5"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image6"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        </TableRow>
+        
+          <TableRow 
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+            <ImageView
+                android:id="@+id/options_dialog_cell_imag4"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+        
+            <TextView
+                android:id="@+id/options_dialog_cell_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+    
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image5"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image6"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        </TableRow>
+        
+           <TableRow 
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+            
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+            <ImageView
+                android:id="@+id/options_dialog_cell_imag4"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+        
+            <TextView
+                android:id="@+id/options_dialog_cell_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+    
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image5"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/options_dialog_cell_image6"
+                android:layout_width="@dimen/options_dialog_cell_image_width"
+                android:layout_height="@dimen/options_dialog_cell_image_height"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey"
+                android:contentDescription="@string/cell_image" />
+    
+            <TextView
+                android:id="@+id/options_dialog_cell_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
+                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
+                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
+                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/options_dialog_cell_textSize"
+                android:text="@string/options_dialog_title_text"/>
+            
+        </LinearLayout>
+        
+        </TableRow>
+        
+    </TableLayout>
+</LinearLayout>
