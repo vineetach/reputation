@@ -4,8 +4,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="navigation_cell_image_width">45dp</dimen>
-    <dimen name="navigation_cell_image_height">45dp</dimen>
+    <dimen name="navigation_cell_image_width">25dp</dimen>
+    <dimen name="navigation_cell_image_height">25dp</dimen>
     <dimen name="navigation_cell_marginLeft">10dp</dimen>
     <dimen name="navigation_cell_marginRight">10dp</dimen>
     <dimen name="navigation_cell_marginTop">5dp</dimen>
@@ -50,5 +50,69 @@
     
     <dimen name="button_stroke_width">1dp</dimen>
     <dimen name="button_corner_radius">1dp</dimen>
+    <dimen name="toggle_button_stroke_width">2dp</dimen>
     
+    <dimen name="cell_with_title_caret_marginTop">10dp</dimen>
+    <dimen name="cell_with_title_caret_marginBottom">10dp</dimen>
+    <dimen name="cell_with_title_caret_marginLeft">10dp</dimen>
+    <dimen name="cell_with_title_caret_marginRight">10dp</dimen>
+    <dimen name="cell_with_title_caret_height">40dp</dimen>
+    <dimen name="cell_with_title_caret_textSize">18sp</dimen>
+    <dimen name="cell_with_title_caret_next_image_height">15dp</dimen>
+    <dimen name="cell_with_title_caret_next_image_width">15dp</dimen>
+    
+    <dimen name="cell_with_two_checkbox_marginLeft">10dp</dimen>
+    <dimen name="cell_with_two_checkbox_marginRight">10dp</dimen>
+    <dimen name="cell_with_two_checkbox_marginBottom">5dp</dimen>
+    <dimen name="cell_with_two_checkbox_marginTop">15dp</dimen>
+    <dimen name="cell_with_two_checkbox_textSize">18sp</dimen>
+    <dimen name="cell_checkbox_marginLeft">20dp</dimen>
+    
+    <dimen name="cell_with_textbox_marginTop">15dp</dimen>
+    <dimen name="cell_with_textbox_marginBottom">5dp</dimen>
+    <dimen name="cell_with_textbox_marginLeft">10dp</dimen>
+    <dimen name="cell_with_textbox_marginRight">10dp</dimen>
+    <dimen name="cell_with_textbox_textSize">18sp</dimen>
+    
+    <dimen name="cell_with_text_toggle_button_marginTop">10dp</dimen>
+    <dimen name="cell_with_text_toggle_button_marginBottom">10dp</dimen>
+    <dimen name="cell_with_text_toggle_button_marginRight">10dp</dimen>
+    <dimen name="cell_with_text_toggle_button_marginLeft">10dp</dimen>
+    <dimen name="cell_with_text_toggle_textSize">18sp</dimen>
+    
+    <dimen name="settings_feed_notif_marginLeft">10dp</dimen>
+    <dimen name="settings_feed_notif_marginRight">10dp</dimen>
+    <dimen name="settings_feed_notif_marginTop">15dp</dimen>
+    <dimen name="settings_feed_notif_marginBottom">5dp</dimen>
+    <dimen name="settings_feed_notif_textSize">18sp</dimen>
+    <dimen name="settings_cell_done_button_height">45dp</dimen>
+    <dimen name="settings_cell_done_button_marginLeft">15dp</dimen>
+    <dimen name="settings_cell_done_button_marginRight">10dp</dimen>
+    <dimen name="settings_cell_done_button_marginTop">15dp</dimen>
+    <dimen name="settings_cell_done_button_marginBottom">10dp</dimen>
+    <dimen name="settings_cell_done_button_paddingLeft">40dp</dimen>
+    <dimen name="settings_cell_done_button_paddingRight">40dp</dimen>
+    
+    <dimen name="settings_cell_with_toggle_button_height">40dp</dimen>
+    
+    <dimen name="settings_personal_textSize">18sp</dimen>
+    
+    <dimen name="summary_top_tile_image_width">35dp</dimen>
+    <dimen name="summary_top_tile_image_height">35dp</dimen>
+    <dimen name="summary_top_tile_marginTop">10dp</dimen>
+    
+    <dimen name="summary_review_tile_marginTop">10dp</dimen>
+    <dimen name="summary_review_tile_textSize">14sp</dimen>
+    
+    <dimen name="summary_reputation_score_tile_marginTop">10dp</dimen>
+    <dimen name="summary_reputation_score_bar_width">55dp</dimen>
+    <dimen name="summary_reputation_score_bar_height">20dp</dimen>
+    
+    <dimen name="summary_reputation_score_textsize">10sp</dimen>
+    <dimen name="summary_reputation_score_titletextSize">14sp</dimen>
+    
+    <dimen name="summary_reputation_review_tile_title_textSize">8sp</dimen>
+    <dimen name="summary_reputation_review_tile_number_textSize">14sp</dimen>
+    <dimen name="summary_reputation_review_tile_age_textSize">8sp</dimen>
+    <dimen name="summary_reputation_top_tile_title_textSize">12sp</dimen>
 </resources>

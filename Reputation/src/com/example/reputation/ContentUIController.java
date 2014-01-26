@@ -46,17 +46,20 @@ public class ContentUIController implements LoaderCallbacks<Cursor>{
     private static final int MAX_IMAGES_IN_MEMORY = 200;
     
     public ContentUIController(Fragment fragment) {
-        initFragment(fragment);
+        //initFragment(fragment);
     }
     
-    private void initFragment(Fragment fragment) {
+    public void initFragment(Fragment fragment) {
         
         mListView = (ListView) fragment.getView().findViewById(R.id.content_list);
         
+        mAdapter = new CustomDataAdapter(fragment.getActivity().getApplicationContext(), R.layout.content_ui_cell, null, null, null);
+        
         mListView.setAdapter(mAdapter);
+        
         mAdapter.setViewBinder(new ContentListRowViewBinder());
         
-        mRemoteImageCache = new RemoteImageCache(mDataSource.getFragmentActivity(),
+        mRemoteImageCache = new RemoteImageCache(mDataSource.getFragmentActivity().getApplicationContext(),
                                 MAX_PARALLEL_IMAGE_ACTIVE_DOWNLOAD, 
                                 null, 
                                 MAX_IMAGES_IN_MEMORY);

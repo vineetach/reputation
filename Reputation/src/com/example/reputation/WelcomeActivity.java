@@ -18,7 +18,7 @@ public class WelcomeActivity extends FragmentActivity {
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        return false;
+        return true;
     }
     
     private void setListeners() {

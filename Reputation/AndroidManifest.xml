@@ -25,6 +25,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.example.reputation.LoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        
+        <activity
+            android:name="com.example.reputation.MyContentFeedActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        
+        <activity
+            android:name="com.example.reputation.NavigationActivity">
+        </activity>
+        
     </application>
 
 </manifest>

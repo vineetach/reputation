@@ -14,6 +14,13 @@
     <string name="submit">Submit</string>
     <string name="respond">Respond</string>
     <string name="welcome">Welcome</string>
+    <string name="feed">Feed</string>
+    <string name="notify">Notify</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="all">All</string>
+    <string name="done">Done</string>
+    <string name="notifications">Notifications</string>
+    <string name="logout">Logout</string>
     
     <string name="button_signin">SignIn</string>
     <string name="forgotPassword">Forgot Password?</string>
@@ -35,4 +42,59 @@
     
     <string name="sample_response">This is a sample</string>
     
+    <string name="edit_profile">Edit Profile</string>
+    <string name="faq">FAQ</string>
+    <string name="offer_paid">Offer Paid</string>
+    <string name="offer_received">Offer Received</string>
+    <string name="offer_accepted">Offer Accepted</string>
+    <string name="item_shipped">Item Shipped</string>
+    <string name="offer_canceled">Offer Canceled</string>
+    <string name="default_alerts">Default Alerts</string>
+    <string name="default_duration">Default Duration</string>
+    <string name="default_calendar">Default Calendar</string>
+    <string name="enable_reminders">Enable Reminders</string>
+    <string name="organize_by_list">Organize By List</string>
+    <string name="lists">Lists</string>
+    <string name="default_lists">Default List</string>
+    <string name="new_events">New Events</string>
+    <string name="reminders">Reminders</string>
+    <string name="calendar">Calendar</string>
+    
+    <string name="one_hour">1 Hour</string>
+    <string name="robin_raszka">Robin Raszka</string>
+    
+    <string-array name="navigation_array">
+        <item>Reputation Summary</item>
+        <item>Unread Content</item>
+        <item>Content Stream</item>
+        <item>Settings</item>
+       <!-- <item>Help</item>
+        <item>Rate this App</item>  -->
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name="poor">Poor</string>
+    <string name="fair">Fair</string>
+    <string name="average">Average</string>
+    <string name="good">Good</string>
+    <string name="excellent">Excellent</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="reputation_score">Reputation Score</string>
+    <string name="listings">Listings</string>
+    <string name="reviews">Reviews</string>
+    <string name="requests">Requests</string>
+    <string name="kiosk_reviews">Kiosks Reviews</string>
+    <string name="social_comments">Sodai Comments</string>
+    <string name="social_posts">Social Posts</string>
+    <string name="accurate">Accurate</string>
+    <string name="positive_reviews">Positive Reviews</string>
+    <string name="neutral_reviews">Neutral Reviews</string>
+    <string name="negative_reviews">Negative Reviews</string>
+    <string name="Facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Google+</string>
+    <string name="review_sites">Review Sites</string>
+    <string name="locations">Locations</string>
 </resources>

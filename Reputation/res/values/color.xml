@@ -9,9 +9,22 @@
     <color name="light_blue">#1569C7</color>
     <color name="brown_red">#B93E3E</color>
     <color name="light_green">#32B232</color>
+    <color name="aquamarine">#7FFFD4</color>
+    <color name="very_light_gray">#CDCDCD</color>
+    <color name="scarlet">#FF2400</color>
+    <color name="pumpkin_orange">#F87217</color>
+    <color name="mango_orange">#FF8040</color>
+    <color name="mustard_yellow">#FBB917</color>
+    <color name="kelly_green">#4CC552</color>
+    <color name="lime_green">#41A317</color>
+    <color name="cobalt_blue">#0020C2</color>
+    <color name="slate_blue">#2B3856</color>
     
     <color name="primary_button_disabled_color">#B4CDCD</color>
     <color name="primary_button_border_color">#0000</color>
     <color name="primary_button_on_touch_color">#00868B</color>
     <color name="primary_button_default_basecolor">#1569C7</color>
+    
+    <color name="transparent">#00000000</color>
+    
 </resources>

@@ -1,464 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="fill_parent"
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:orientation="vertical">
-    
-    <TableLayout
-        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ScrlView">
+    <LinearLayout
         android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_gravity="left|top"
-        android:layout_row="0"
-        android:stretchColumns="*" >
-
-        <TableRow 
-            android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+        
+        <TableLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:stretchColumns="*" >
+    
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            
+                <include
+                    android:id="@+id/tile1"
+                    layout="@layout/summary_top_tile">
+                </include>
+                
+                <include
+                    android:id="@+id/tile2"
+                    layout="@layout/summary_top_tile">
+                </include>
+           </TableRow>
+    
+        </TableLayout>
         
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/summary_reputation_score_tile_marginTop"
+            android:orientation="vertical">
+    
+            <TextView
+                android:id="@+id/reputation_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/cobalt_blue"
+                android:textSize="@dimen/summary_reputation_score_titletextSize"
+                android:text="@string/reputation_score"/>
+                    
             <LinearLayout 
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            
-                <ImageView
-                    android:id="@+id/options_dialog_cell_image"
-                    android:layout_width="@dimen/options_dialog_cell_image_width"
-                    android:layout_height="@dimen/options_dialog_cell_image_height"
-                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                    android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/grey"
-                    android:contentDescription="@string/cell_image" />
-            
-                <TextView
-                    android:id="@+id/options_dialog_cell_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                    android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                    android:layout_gravity="center_horizontal"
-                    android:ellipsize="end"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/options_dialog_cell_textSize"
-                    android:text="@string/options_dialog_title_text"/>
-        
-            </LinearLayout>
-            
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-        
-                <ImageView
-                    android:id="@+id/options_dialog_cell_image1"
-                    android:layout_width="@dimen/options_dialog_cell_image_width"
-                    android:layout_height="@dimen/options_dialog_cell_image_height"
-                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                    android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/grey"
-                    android:contentDescription="@string/cell_image" />
-        
-                <TextView
-                    android:id="@+id/options_dialog_cell_name1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                    android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                    android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                    android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                    android:layout_gravity="center_horizontal"
-                    android:ellipsize="end"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/options_dialog_cell_textSize"
-                    android:text="@string/options_dialog_title_text"/>
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/summary_reputation_score_tile_marginTop"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp">
+                
+                <!-- TODO: Check if we can use art instead of creating one -->
+                <LinearLayout
+                    android:layout_width="@dimen/summary_reputation_score_bar_width"
+                    android:layout_height="@dimen/summary_reputation_score_bar_height"
+                    android:background="@drawable/poor_rating_background">
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/summary_reputation_score_textsize"
+                        android:text="@string/poor"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="@dimen/summary_reputation_score_bar_width"
+                    android:layout_height="@dimen/summary_reputation_score_bar_height"
+                    android:background="@color/pumpkin_orange">
+                     
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/summary_reputation_score_textsize"
+                        android:text="@string/fair"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="@dimen/summary_reputation_score_bar_width"
+                    android:layout_height="@dimen/summary_reputation_score_bar_height"
+                    android:background="@color/mustard_yellow">
+                     
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/summary_reputation_score_textsize"
+                        android:text="@string/average"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="@dimen/summary_reputation_score_bar_width"
+                    android:layout_height="@dimen/summary_reputation_score_bar_height"
+                    android:background="@color/kelly_green">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/summary_reputation_score_textsize"
+                        android:text="@string/good"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="@dimen/summary_reputation_score_bar_width"
+                    android:layout_height="@dimen/summary_reputation_score_bar_height"
+                    android:background="@color/lime_green">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/summary_reputation_score_textsize"
+                        android:text="@string/excellent"/>
+                </LinearLayout>
                 
             </LinearLayout>
-
-        </TableRow>
-    
-    
-
-    </TableLayout>
-    
-    <LinearLayout
+        
+        </LinearLayout>
+        
+        <TableLayout
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image3"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
-    
-    <TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_column="0"
-        android:layout_gravity="left|bottom"
-        android:layout_row="0"
-        android:stretchColumns="*" >
-            
-        <TableRow 
-        android:id="@+id/tableRow2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-            
-        <LinearLayout 
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-        
-            <ImageView
-                android:id="@+id/options_dialog_cell_imag4"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-        
-            <TextView
-                android:id="@+id/options_dialog_cell_name4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-    
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image5"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
+            android:layout_gravity="left|bottom"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*">
+                
+            <TableRow 
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                    
+                <include 
+                    android:id="@+id/listings_tile"
+                    layout="@layout/summary_review_tile"
+                />
+                
+                <include 
+                    android:id="@+id/review_tile"
+                    layout="@layout/summary_review_tile"
+                />
+                
+                <include 
+                    android:id="@+id/requests_tile"
+                    layout="@layout/summary_review_tile"
+                />
+            </TableRow>
             
-        </LinearLayout>
+              <TableRow 
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                
+                <include 
+                    android:id="@+id/kiosks_review_tile"
+                    layout="@layout/summary_review_tile"
+                />
+                
+                <include 
+                    android:id="@+id/social_comments_tile"
+                    layout="@layout/summary_review_tile"
+                />
+                
+                <include 
+                    android:id="@+id/social_posts_tile"
+                    layout="@layout/summary_review_tile"
+                />
+            </TableRow>
         
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image6"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
+        </TableLayout>
         
-        </TableRow>
-        
-          <TableRow 
-        android:id="@+id/tableRow3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-            
-        <LinearLayout 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        
-            <ImageView
-                android:id="@+id/options_dialog_cell_imag4"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-        
-            <TextView
-                android:id="@+id/options_dialog_cell_name4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-    
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image5"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image6"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
-        
-        </TableRow>
-        
-           <TableRow 
-        android:id="@+id/tableRow4"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-            
-        <LinearLayout 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        
-            <ImageView
-                android:id="@+id/options_dialog_cell_imag4"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-        
-            <TextView
-                android:id="@+id/options_dialog_cell_name4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-    
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image5"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-    
-            <ImageView
-                android:id="@+id/options_dialog_cell_image6"
-                android:layout_width="@dimen/options_dialog_cell_image_width"
-                android:layout_height="@dimen/options_dialog_cell_image_height"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/grey"
-                android:contentDescription="@string/cell_image" />
-    
-            <TextView
-                android:id="@+id/options_dialog_cell_name6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/options_dialog_cell_marginBottom"
-                android:layout_marginLeft="@dimen/options_dialog_cell_marginLeft"
-                android:layout_marginRight="@dimen/options_dialog_cell_marginRight"
-                android:layout_marginTop="@dimen/options_dialog_cell_name_marginTop"
-                android:layout_gravity="center_horizontal"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/options_dialog_cell_textSize"
-                android:text="@string/options_dialog_title_text"/>
-            
-        </LinearLayout>
-        
-        </TableRow>
-        
-    </TableLayout>
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

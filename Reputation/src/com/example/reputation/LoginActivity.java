@@ -3,7 +3,9 @@ package com.example.reputation;
 import connection.ConnectionListener;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -66,11 +68,16 @@ public class LoginActivity extends FragmentActivity implements ConnectionListene
         //Pass this as the listener. Upon response back open the next activity.
         
         //TODO-Move this to onReqComplete
-        Intent intent = new Intent(getApplicationContext(), 
-                                    com.example.reputation.WelcomeActivity.class); 
-        startActivity(intent);
+        /*Fragment fragment = new UnreadContentFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(android.R.id.content, fragment, getClass().getSimpleName()).commit();
+        getSupportFragmentManager().executePendingTransactions();*/
         
-        this.finish();
+        final Intent mainIntent = new Intent(LoginActivity.this, NavigationActivity.class);
+        LoginActivity.this.startActivity(mainIntent);
+        LoginActivity.this.finish();
+        
+       this.finish();
     }
     
     @Override

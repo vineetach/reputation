@@ -76,7 +76,6 @@
             android:layout_marginTop="10dp"
             android:textSize="14sp"
             android:autoLink="web"
-            android:onClick="forgotPasswordClicked"
             android:text="@string/forgotPassword"
             android:textColor="@color/light_blue" />
 

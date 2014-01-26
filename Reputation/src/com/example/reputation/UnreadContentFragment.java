@@ -27,12 +27,14 @@ public class UnreadContentFragment extends Fragment implements FragmentDataSourc
         super.onActivityCreated(savedInstanceState);
         
         mUIController = new ContentUIController(this);
+        
     }
     
     @Override
     public void onStart() {
         super.onStart();
-        
+        mUIController.setDataSource(this);
+        mUIController.initFragment(this);
         refreshData();
     }
     
@@ -41,6 +43,6 @@ public class UnreadContentFragment extends Fragment implements FragmentDataSourc
     }
     
     public Activity getFragmentActivity() {
-        return getFragmentActivity();
+        return this.getActivity();
     }
 }
